@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Barang</title>
+    <link rel="stylesheet" href="CSS/list-barang.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Marck+Script&family=Sarabun:wght@100&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+     <!-- Navbar -->
+     <section id="list-barang" class="jumbotron jumbotron-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">GreenStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="color: whitesmoke; font-family: Sarabun, sans-serif">Menu</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#obat">obat</a>
+                </li>
+                <div class="dropdown" style="margin-top: 0.3rem">
+                  <a style="color: white" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> <span class="material-icons"> account_circle </span></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="margin-top: -1rem !important;">
+                    <li><a class="dropdown-item" href="loginpage.html">Login</a></li>
+                    <li><a class="dropdown-item" href="keranjang-belanja.html">Keranjang</a></li>
+                    <li><a class="dropdown-item" href="Pembayaran.html">Pembayaran</a></li>
+                    <li><a class="dropdown-item" href="Pemesanan.html">Pemesanan</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Judul halaman -->
+        <div class="row" id="judul-halaman">
+            <div class="col-12">
+                <h1 class="text-judul-halaman">List Barang</h1>
+            </div>
+        <!-- Akhir Navbar -->
+        <!-- List Barang -->
+        <section class="page-section" id="Barang">
+         
+            <!-- obat -->
+            <div class="container" id="obat">
+              <div class="text-center">
+                <h1 id="tagline" class="section-heading">obat</h1>
+                
+                <hr />
+              </div>
+              <div class="row d-flex justify-content-center" id="container-obat">
+               <!-- dubuat di fetch -->
+              </div>
+            </div>
+            <!-- Akhir obat -->
+            <!-- Buah -->
+            <!-- <div class="container" id="buah">
+              <div class="text-center">
+                <h1 id="tagline" class="section-heading">Buah</h1>
+                <hr />
+              </div>
+              <div class="row d-flex justify-content-center" id="container-buah">
+                dibuat di fetch
+              </div>
+            </div> -->
+          </section>
+        <!-- Akhir List Barang -->
+         <!-- Barang Modals-->
+        <!-- Barang item 1 modal popup-->
+        <div id="list-obat">
+          <!-- dibuat di fetch -->
+        <!-- </div>
+        <div id="list-buah"> -->
+          <!-- dibuat di fetch -->
+        </div>
+        <!-- popup buat masukan ke keranjang -->
+        <div class="Populer-modal modal fade" id="modalobat" tabindex="-1" role="dialog" aria-hidden="true" id="pap" style="margin-top: 2rem;">
+          <div class="modal-dialog" style="width:50%;margin-left: 25%;border: none;">
+            <div class="modal-content">
+              <div class="close-modal" data-bs-dismiss="modal"></div>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col">
+                    <header class="modal-body">
+                      <header class="masthead">
+                        <div class="container-fluid halaman">
+                          <div style="background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;">
+                            <div class="masthead-subheading">Green Store</div>
+                            <div style="z-index: 1" class="masthead-heading">Beli Semaunya, Bayar Seadanya</div>
+                          </div>
+                        </div>
+                      </header>
+                      <p >Barang Sudah Masuk ke dalam Keranjang</p>
+                      <button class="btn btn-success btn-xl text-uppercase"  type="button" onclick="location.href='list-barang.html'" >
+                        OK
+                      </button>
+                    </header>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="Js/list-barang.js"></script>
+   <script src="vendor/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" ></script>    
+  </body>
+</html>
